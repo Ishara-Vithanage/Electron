@@ -1,0 +1,52 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Compiled files
+dist/
+out/
+build/
+.cache/
+
+# Electron Packager output
+/my-electron-app-*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+*.gz
+logs/*.log
+
+# Temporary files
+tmp/
+temp/
+
+# VSCode settings (optional)
+.vscode/
+*.code-workspace
+
+# Electron-specific files
+electron-builder.yaml
+electron-builder.json
+electron-builder.js
+*.asar
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# MacOS system files
+.AppleDouble
+.LSOverride
+Icon?
