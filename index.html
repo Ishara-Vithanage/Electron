@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electron App</title>
+    <title>Animated Splash Screen</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to Electron</h1>
-    <p>This is a basic Electron application.</p>
+
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <div class="logo">
+            <img src="assets/logo.png" alt="Logo">
+        </div>
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Main Content (Hidden initially) -->
+    <div id="main-content">
+        <h1>Welcome to Seylan Bank Customer Portal</h1>
+        <p style="margin-top: 30px;">This is the main content of the page.</p>
+    </div>
+
+    <script>
+        // Wait 3 seconds before hiding splash screen
+        window.addEventListener("load", function () {
+            setTimeout(() => {
+                document.getElementById("splash-screen").classList.add("hide");
+            }, 3000);
+        });
+    </script>
+
 </body>
 </html>
